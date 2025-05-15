@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;  /* Шапка, контент, футер */
+    min-height: 100vh;                  /* Высота экрана */
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #232f3e;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+nav {
+    background-color: #333;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;  /* Распределение пунктов меню */
+    list-style-type: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 300px;
+    background-color: #f0f0f0;
+}
+
+.main-content .content-box {
+    width: 150%;  /* Расширяем центральный блок на 70% экрана */
+    padding: 400px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Добавляем тень */
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #232f3e;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #111;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;  /* Центрирование содержимого */
+    padding: 10px;
+}
+
+/* Адаптация под мобильные устройства с шириной экрана до 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;  /* Меньший текст для небольших экранов */
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .button {
+        width: 100%;  /* Кнопки растягиваются на всю ширину */
+        font-size: 14px;
+    }
+}
+
+/* Адаптация для экранов от 481px до 768px (планшеты) */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 16px;  /* Немного увеличенный текст для планшетов */
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .button {
+        width: 80%;  /* Кнопки немного шире */
+    }
+}
+
+/* Адаптация для экранов от 769px до 1440px (ноутбуки и компьютеры) */
+@media (min-width: 769px) and (max-width: 1440px) {
+    body {
+        font-size: 18px;  /* Увеличенный текст для больших экранов */
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .button {
+        width: auto;  /* Возврат к стандартному размеру */
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 20px;  /* Больше отступов на больших экранах */
+    }
+}

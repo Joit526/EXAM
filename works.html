@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мои работы</title>
+     <!-- Тема текста -->
+  <link id="text-theme-link" rel="stylesheet" href="light-text.css" />
+  
+  <!-- Тема блоков и меню -->
+  <link id="layout-theme-link" rel="stylesheet" href="Light-blocks.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Art Store</h1>
+  </header>
+
+   <nav>
+  <ul>
+    <li><button id="menu-toggle" class="nav-button">☰</button></li>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="about.html">О себе</a></li>
+    <li><a href="works.html">Мои работы</a></li>
+    <li><a href="files.html">Файлы</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+  </ul>
+
+  <!-- Меню находится внутри <nav> -->
+  <div id="side-menu">
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="Supplies.html">Товары</a></li>
+      <li><a href="Popular.html">Популярное</a></li>
+      <li><a href="Demonstration.html">Демонстрация товаров</a></li>
+      <li><a href="Form.html">Регистрация</a></li>
+    </ul>
+    <button onclick="switchTheme()">Сменить тему</button>
+  </div>
+</nav>
+<div class="title-content">
+    <div class="title-box">
+        
+            <h2>Примеры моих работ</h2>
+
+                <p>Здесь представлены мои проекты:</p>
+       
+    </div>
+    </div>
+<div class="main-content">
+    <div class="content-box">
+    <table width="80%" align="center" border="1" cellspacing="0" cellpadding="10" bgcolor="white">
+        <tr align="center" bgcolor="#ddd">
+            <th>Название</th>
+            <th>Описание</th>
+            <th>Превью</th>
+        </tr>
+        <tr align="center">
+            <td><b>Проект 1</b></td>
+            <td>Валидный HTML-документ</td>
+             <td><a href="index.html">Главная</a></td>
+        </tr>
+        <tr align="center">
+            <td><b>Проект 2</b></td>
+            <td>Список</td>
+             <td><a href="Supplies.html">Список товаров</a></td>
+        </tr>
+        <tr align="center">
+            <td><b>Проект 3</b></td>
+            <td>Страница-фотогалерея.</td>
+             <td><a href="Задание 4.html">Галерея</a></td>
+        </tr>
+         <tr align="center">
+            <td><b>Проект 4</b></td>
+            <td>HTML-форма.</td>
+             <td><a href="Задание 5.html">Форма</a></td>
+        </tr>
+    </table>
+    </div>
+    </div>
+ <footer>
+    <p>&copy; 2024. Все права защищены.</p>
+  </footer>
+      <script src="Menu.js"></script>
+</body>
+</html>

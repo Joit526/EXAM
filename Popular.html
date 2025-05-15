@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArtStore — Фотогалерея</title>
+  <link rel="stylesheet" href="Галерея.css">
+    <!-- Тема текста -->
+  <link id="text-theme-link" rel="stylesheet" href="light-text.css" />
+  
+  <!-- Тема блоков и меню -->
+  <link id="layout-theme-link" rel="stylesheet" href="Light-blocks.css" />
+</head>
+<body>
+<header>
+  <h1>ArtStore – Галерея товаров</h1>
+</header>
+<nav>
+  <ul>
+    <li><button id="menu-toggle" class="nav-button">☰</button></li>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="about.html">О себе</a></li>
+    <li><a href="works.html">Мои работы</a></li>
+    <li><a href="files.html">Файлы</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+  </ul>
+   <span id="cartCounter">Товаров в корзине: 0</span>
+  <!-- Меню находится внутри <nav> -->
+  <div id="side-menu">
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="Supplies.html">Товары</a></li>
+      <li><a href="Popular.html">Популярное</a></li>
+      <li><a href="Demonstration.html">Демонстрация товаров</a></li>
+      <li><a href="Form.html">Регистрация</a></li>
+    </ul>
+    <button onclick="switchTheme()">Сменить тему</button>
+    </div>
+</nav>
+    
+<main class="gallery">
+  <div class="product">
+    <a href="https://i.pinimg.com/736x/4f/46/98/4f4698189ad655da00f31f50c41f3e31.jpg" target="_blank">
+      <img src="4f4698189ad655da00f31f50c41f3e31.jpg" alt="Горы и озеро">
+    </a>
+    <div class="product-info">
+      <h3>Мольберт</h3>
+      <p>Мольберт, формат А4.</p>
+      <div class="price">1 200₽</div>
+      <button class="button">Добавить в корзину</button>
+    </div>
+  </div>
+  <div class="product">
+  <a href="https://i.pinimg.com/736x/09/ef/fb/09effbaa086a00978ab4a93b745d67b8.jpg" target="_blank">
+    <img src="09effbaa086a00978ab4a93b745d67b8.jpg" alt="Набор кистей">
+  </a>
+  <div class="product-info">
+    <h3>Набор кистей для акрила</h3>
+    <p>10 профессиональных кистей разной формы и размера.</p>
+    <div class="price">720₽</div>
+    <button class="button">Добавить в корзину</button>
+  </div>
+</div>
+
+<div class="product">
+  <a href="https://i.pinimg.com/736x/e4/cc/c8/e4ccc81e76dc6fc0b26ae409c9db641b.jpg" target="_blank">
+    <img src="e4ccc81e76dc6fc0b26ae409c9db641b.jpg" alt="Пастельные мелки">
+  </a>
+  <div class="product-info">
+    <h3>Пастельные мелки 50 цветов</h3>
+    <p>Мягкие мелки для рисования и скетчинга.</p>
+    <div class="price">560₽</div>
+    <button class="button">Добавить в корзину</button>
+  </div>
+</div>
+
+<div class="product">
+  <a href="https://i.pinimg.com/736x/29/04/5d/29045d2a5bdbe3f995b2e17f98dc4c85.jpg" target="_blank">
+    <img src="29045d2a5bdbe3f995b2e17f98dc4c85.jpg" alt="Альбом для акварели">
+  </a>
+  <div class="product-info">
+    <h3>Альбом для акварели A4</h3>
+    <p>200 г/м², 20 листов, склейка, белая текстура.</p>
+    <div class="price">430₽</div>
+    <button class="button">Добавить в корзину</button>
+  </div>
+</div>
+  <!-- Остальные карточки аналогично -->
+</main>
+
+<footer>
+  &copy; 2025 ArtStore
+</footer>
+<script src="Menu.js"></script>
+<script src="Gallery.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <link id="text-theme-link" rel="stylesheet" href="light-text.css" />
+    <link id="layout-theme-link" rel="stylesheet" href="Light-blocks.css" />  
+</head>
+    
+
+<body>
+<header>
+    <h1>Art Store</h1>
+  </header>
+ <nav>
+  <ul>
+    <li><button id="menu-toggle" class="nav-button">☰</button></li>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="about.html">О себе</a></li>
+    <li><a href="works.html">Мои работы</a></li>
+    <li><a href="files.html">Файлы</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+  </ul>
+
+  <!-- Меню находится внутри <nav> -->
+  <div id="side-menu">
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="Supplies.html">Товары</a></li>
+      <li><a href="Popular.html">Популярное</a></li>
+      <li><a href="Demonstration.html">Демонстрация товаров</a></li>
+      <li><a href="Form.html">Регистрация</a></li>
+    </ul>
+    <button onclick="switchTheme()">Сменить тему</button>
+  </div>
+</nav>
+
+<div class="main-content">
+    <div class="content-box">
+  
+
+    <table width="100%" border="1" cellspacing="0" cellpadding="10" bgcolor="white">
+        <tr bgcolor="#ddd" align="center">
+            <th>Товар</th>
+            <th>Категория</th>
+            <th>Цена</th>
+        </tr>
+        <tr align="center">
+            <td>Набор кистей для акрила, 6 шт.</td>
+            <td rowspan="2">Кисточки</td>
+            <td>1000$</td>
+        </tr>
+        <tr align="center">
+            <td>Набор кистей, 10 шт.</td>
+            <td>1200$</td>
+        </tr>
+        <tr align="center">
+            <td>Альбом для акварели, А4, 20 л.</td>
+            <td rowspan="2">Альбомы</td>
+            <td>850$</td>
+        </tr>
+        <tr align="center">
+            <td>Альбом, А3, 15 л.</td>
+            <td>650$</td>
+        </tr>
+        <tr align="center">
+            <td>Пастельные мелки, 50 шт.</td>
+            <td rowspan="2">Художественные материалы</td>
+            <td>700$</td>
+        </tr>
+        <tr align="center">
+        <td>Набор гуаши, 20 цветов</td>
+        <td>300$</td>
+        </tr>
+    </table>
+  </div>
+  </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="10" bgcolor="#333">
+        <tr>
+            <td align="center"><font color="white">&copy;</font></td>
+        </tr>
+    </table>
+<script src="Menu.js"></script>
+</body>
+</html>

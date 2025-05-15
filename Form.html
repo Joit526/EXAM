@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="text-theme-link" rel="stylesheet" href="light-text.css" />
+     <!-- Тема блоков и меню -->
+    <link id="layout-theme-link" rel="stylesheet" href="Light-blocks.css" />
+    <title>Анкета</title>
+</head>
+<body>
+    <table width="100%" border="0" cellspacing="0" cellpadding="10" bgcolor="#333">
+        <tr>
+            <td align="center"><font color="white" size="6"><b>Анкета</b></font></td>
+        </tr>
+    </table>
+
+    <nav>
+  <ul>
+    <li><button id="menu-toggle" class="nav-button">☰</button></li>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="about.html">О себе</a></li>
+    <li><a href="works.html">Мои работы</a></li>
+    <li><a href="files.html">Файлы</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+  </ul>
+
+  <!-- Меню находится внутри <nav> -->
+  <div id="side-menu">
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="Supplies.html">Товары</a></li>
+      <li><a href="Popular.html">Популярное</a></li>
+      <li><a href="Demonstration.html">Демонстрация товаров</a></li>
+      <li><a href="Form.html">Регистрация</a></li>
+    </ul>
+    <button onclick="switchTheme()">Сменить тему</button>
+  </div>
+</nav>
+<div class="main-content">
+    <div class="content-box">
+    <table width="50%" align="center" border="1" cellspacing="0" cellpadding="10" bgcolor="white">
+        <tr bgcolor="#ddd">
+            <th colspan="2">Заполните анкету</th>
+        </tr>
+        <form>
+            <tr>
+                <td><label for="name"><b>Имя:</b></label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><b>Пол:</b></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" checked> <label for="male">Мужской</label>
+                    <input type="radio" id="female" name="gender" value="female"> <label for="female">Женский</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dob"><b>Дата рождения:</b></label></td>
+                <td><input type="date" id="dob" name="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="email"><b>E-mail:</b></label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="comments"><b>Ваш комментарий:</b></label></td>
+                <td><textarea id="comments" name="comments" rows="3"></textarea></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <input type="submit" value="Отправить"> 
+                    <input type="reset" value="Очистить">
+                </td>
+            </tr>
+        </form>
+    </table>
+ </div>
+  </div>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="10" bgcolor="#333">
+        <tr>
+            <td align="center"><font color="white">&copy;</font></td>
+        </tr>
+    </table>
+<script src = "Form.js" defer></script>
+<script src="Menu.js"></script>
+</body>
+</html>

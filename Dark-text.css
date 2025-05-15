@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 20px;
+    color: #e0e0e0; /* Светлый текст для тёмной темы */
+    line-height: 1.5;
+    background-color: #111; /* Тёмный фон */
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+  color: #ffffff;
+}
+
+h2 {
+  color: #000000;
+}
+p, span, a {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+a {
+    color: #4a90e2;  /* Светло-синий цвет для ссылок */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    background-color: #f0c14b; /* Желтый цвет кнопок */
+    border: 1px solid #a88734;
+    color: #111;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ddb347; /* Более тёмный жёлтый при наведении */
+}
+
+.footer-text {
+    font-size: 12px;
+    color: #bbb; /* Светлый текст для футера */
+}

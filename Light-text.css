@@ -1,0 +1,127 @@
+ body {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    color: #111;  /* Amazon's main text color */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;  /* Ближайшие аналоги Amazon Ember */
+    font-size: 20px;  /* Размер текста, как на Amazon */
+    color: #0f1111;  /* Темный оттенок текста */
+    line-height: 1.5;  /* Удобочитаемость */
+    margin: 0;
+    padding: 0;
+}
+
+tr {
+    color: black
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-weight: 700; /* Bold headings */
+    color: #ffffff; 
+}
+
+p, span, a {
+    font-size: 14px; /* Common size */
+    line-height: 1.5;  /* Proper spacing for readability */
+}
+
+a {
+    color: #0066c0; /* Amazon link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Hover effect on links */
+}
+
+.button {
+    background-color: #f0c14b; /* Amazon's button yellow */
+    border: 1px solid #a88734;
+    color: #111;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ddb347; /* Slightly darker yellow on hover */
+}
+
+.footer-text {
+    font-size: 12px;
+    color: #555;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #111;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;  /* Центрирование содержимого */
+    padding: 10px;
+}
+
+/* Адаптация под мобильные устройства с шириной экрана до 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;  /* Меньший текст для небольших экранов */
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .button {
+        width: 100%;  /* Кнопки растягиваются на всю ширину */
+        font-size: 14px;
+    }
+}
+
+/* Адаптация для экранов от 481px до 768px (планшеты) */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 16px;  /* Немного увеличенный текст для планшетов */
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .button {
+        width: 80%;  /* Кнопки немного шире */
+    }
+}
+
+/* Адаптация для экранов от 769px до 1440px (ноутбуки и компьютеры) */
+@media (min-width: 769px) and (max-width: 1440px) {
+    body {
+        font-size: 18px;  /* Увеличенный текст для больших экранов */
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .button {
+        width: auto;  /* Возврат к стандартному размеру */
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 20px;  /* Больше отступов на больших экранах */
+    }
+}
